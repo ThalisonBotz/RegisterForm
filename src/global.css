@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-  
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -44,19 +43,17 @@
     --accent-foreground: 210 20% 98%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 20% 98%;
-    --border: 215 27.9% 16.9%;
-    --input: 215 27.9% 16.9%;
+    --border: 215 27.9% 35%;
+    --input: 215 27.9% 35%;
     --ring: 263.4 70% 50.4%;
   }
-}
 
-
-  @layer base {
-    * {
-      @apply border-border;
-      font-family: 'DM Sans', sans-serif;
-    }
-    body {
-      @apply bg-background text-foreground;
-    }
+  * {
+    @apply border-border;
+    font-family: 'DM Sans', sans-serif;
   }
+  
+  body {
+    @apply bg-background text-foreground;
+  }
+}
